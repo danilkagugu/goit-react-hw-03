@@ -10,11 +10,11 @@ const ContactForm = ({ onAdd }) => {
 
   const FeedbackSchema = object().shape({
     name: string()
-      .min(2, "Too Short!")
+      .min(3, "Too Short!")
       .max(50, "Too Long!")
       .required("Required"),
     number: string()
-      .min(5, "Too Short!")
+      .min(3, "Too Short!")
       .max(20, "Too Long!")
       .required("Required"),
   });
